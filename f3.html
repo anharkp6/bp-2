@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(lmt)
+           {
+            for(var i=0;i<=100;i++)
+              { 
+                let flag=0;  
+                for(var j=2;j<i;j++)
+                  {
+                     if(i%j==0)
+                       {
+                          flag=1;
+                          break; 
+                       }
+                  }
+                if (i>1 && flag==0)
+                  {
+                      document.write(i);
+                      document.write("<br>");
+                  } 
+              } 
+           }
+        let lmt;
+        document.write("Prime Numbers Upto 100 are:<br>");
+        let a=isPrime(lmt);
+        
+        
+    </script>
+</body>
+</html>

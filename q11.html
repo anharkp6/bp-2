@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=parseInt(prompt("Enter the Lower limit"));
+        let num2=parseInt(prompt("Enter the higher limit"));
+        document.write("Amstrong Numbers are:");
+        for(var i=num1;i<=num2;i++)
+          {  
+            let sum=0;
+            let digit;
+            let temp=i; 
+            while(temp>0)
+             {
+              digit=temp%10;
+              sum+=digit*digit*digit;
+              temp = parseInt(temp / 10);
+             } 
+             if(sum==i)
+               {
+                document.write("<br>");
+                document.write(i);
+               } 
+            
+          }
+            
+    </script>
+</body>
+</html>

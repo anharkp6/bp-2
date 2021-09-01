@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function solve(a, b, c) 
+    {
+    var result = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    return result + "<br>" + result2;
+    }
+        let a= parseInt(prompt("Enter the co efficient of a:"));
+        let b=  parseInt(prompt("Enter the co efficient of b:"));
+        let c=  parseInt(prompt("Enter the co efficient of c:"));
+        document.write("The coefficient of a :",a);
+        document.write("<br>")
+        document.write("The coefficient of b :",b);
+        document.write("<br>")
+        document.write("The coefficient of c :",c);
+        document.write("<br>")
+        document.write("result is:",solve(a,b,c));
+        document.write("<br>")
+        document.write("<br>")
+    </script>
+</body>
+</html>
